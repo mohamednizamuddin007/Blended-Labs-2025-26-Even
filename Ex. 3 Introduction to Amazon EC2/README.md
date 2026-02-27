@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* *Name*: MOHAMED NIZAMUDDIN A
+* *Register Number*: 212224040194
+* *Date of Submission*: 27.02.2026
 
 ---
 
@@ -64,9 +64,9 @@ Connect to the running EC2 instance using SSH. Use the downloaded key pair and c
 
 For Amazon Linux:
 
-```
+
 ssh -i "keyname.pem" ec2-user@<Public-IP>
-```
+
 
 ---
 
@@ -96,33 +96,47 @@ Terminate the EC2 instance after completing the experiment to avoid unnecessary 
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
 
----
+1. Launch Your Amazon EC2 Instance task provisions a Amazon EC2 instance in the N. Virginia region with termination and stop protection enabled, configured inside a Lab VPC with a custom security group, and bootstrapped via user data to automatically deploy an Apache web server on Amazon Linux 2023.
+   
+2. Monitor Your Instance task focuses on monitoring your Amazon EC2 instance using status checks, logs, screenshots, and performance metrics through Amazon CloudWatch to ensure reliability and troubleshoot issues proactively.
+   
+3. Update Your Security Group and Access the Web Server task updates the security group of your Amazon EC2 instance to allow inbound HTTP (port 80) traffic, enabling external access to the deployed web server via its public IPv4 address.
+   
+4. Resize Your Instance task stops your Amazon EC2 instance to upgrade its instance type from t2.micro to t2.small, enables stop protection, and increases the attached Amazon Elastic Block Store volume size from 8 GiB to 10 GiB before restarting it.
+   
+5. Explore EC2 Limits task involves reviewing regional resource quotas for Amazon Elastic Compute Cloud through the Service Quotas console to understand default limits on running on-demand instances and other EC2 resources, and how they govern deployment capacity.
+    
+6.Test Stop Protection task validates stop protection on your Amazon EC2 instance by attempting to stop it, confirming the safeguard blocks the action, then disabling the protection to successfully stop the instance.
+
+
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EC2 Dashboard / Instance List
 
-(Insert Screenshot Here)
+<img width="1919" height="1091" alt="Screenshot 2026-02-26 105810" src="https://github.com/user-attachments/assets/fbbbb691-6639-46d9-9614-7c51f7ff551f" />
+<img width="1913" height="1017" alt="Screenshot 2026-02-27 090545" src="https://github.com/user-attachments/assets/24bf9fb4-608f-4a2c-b8b0-e7b7e2bf88d8" />
+
+<img width="1895" height="958" alt="Screenshot 2026-02-27 085454" src="https://github.com/user-attachments/assets/da22ef75-9a54-45c2-80b4-65de236d6b66" />
+
+
 
 ---
 
 ### Screenshot 2: SSH Connection to Instance
 
-(Insert Screenshot Here)
+<img width="1919" height="1086" alt="Screenshot 2026-02-26 112408" src="https://github.com/user-attachments/assets/c8998d98-cd7a-4dd9-a902-6cd9715f3dab" />
 
 ---
 
 ### Screenshot 3: Instance Monitoring / Status
 
-(Insert Screenshot Here)
+<img width="1903" height="1070" alt="Screenshot 2026-02-26 111748" src="https://github.com/user-attachments/assets/e09795cd-46bd-4093-97e8-6e8fdb49f066" />
+<img width="842" height="1004" alt="Screenshot 2026-02-27 083653" src="https://github.com/user-attachments/assets/b2da8219-cf71-42d3-9867-43f75037ed35" />
+<img width="933" height="954" alt="Screenshot 2026-02-27 084126" src="https://github.com/user-attachments/assets/69e32fc9-f529-40b3-bbc5-7c80ae678361" />
+
 
 ---
 
