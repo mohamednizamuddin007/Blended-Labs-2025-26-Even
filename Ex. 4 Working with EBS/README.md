@@ -78,8 +78,6 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
-
 1. Create a New EBS Volume task provisions a 1 GiB Amazon Elastic Block Store (gp2) volume in the same Availability Zone as the existing Amazon EC2 instance and tags it for structured resource identification before attachment.
 
 2. Attach the Volume to an Instance task attaches the newly created Amazon Elastic Block Store volume to the Lab Amazon EC2 instance using the specified device name, transitioning the volume state from Available to In-use.
